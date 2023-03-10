@@ -23,7 +23,7 @@ const Login=()=>{
             autoDismiss: true
          });
       }
-      const response=await auth.loginIn(email,password);
+      const response=await auth.login(email,password);
       if(response.success){
           addToast("successfully Log In",{
             appearance:'success',
